@@ -1,3 +1,5 @@
+// pilha com alocacao dinamica e encadeamento simples
+
 #include <stdlib.h>
 #include "pilha.h"
 
@@ -8,9 +10,8 @@ pilha inicializar () {
 }
 
 void destruir (pilha p) {
-    while (!vazia(p)) {
+    while (!vazia(p))
         remover(p);
-    }
     free(p);
 }
 
